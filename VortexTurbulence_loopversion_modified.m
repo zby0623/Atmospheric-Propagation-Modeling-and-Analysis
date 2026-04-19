@@ -74,9 +74,9 @@ turb_nscr=1;
 prop_nscr=5;
 R0=zeros(turb_nscr,length(cn2));
 for i=1:length(cn2)
-    R0(:,i)=Cn2r0(Dz_turb,k,cn2(i),turb_nscr,0); % Convert Cn2 values to Fried parameter
+    R0(:,i)=Cn2r0(Dz_turb,k,cn2(i),turb_nscr,0); % Convert Cn2 values to Fried parameters
 end
-R0_prop=Cn2r0(Dz,k,cn2(1),prop_nscr,1);
+R0_prop=Cn2r0(Dz,k,cn2(1),prop_nscr,1); % Convert ambient Cn2 values to Fried parameters of multiple-layered phase screens
 Ecc=zeros(3,length(R0));Eccstd=zeros(3,length(R0));
 Ell=zeros(3,length(R0));Ellstd=zeros(3,length(R0));
 SI=zeros(3,length(R0));
