@@ -55,3 +55,7 @@ disp(c/c); % Constant A in Eq. (4) for Kolmogorov PSD
 disp(d/c); % Constant A in Eq. (4) for Tatarskii PSD
 disp(b/c); % Constant A in Eq. (4) for mvK PSD
 disp(a/c); % Constant A in Eq. (4) for modified PSD
+%% Directly calculating constant A based on Eq. (20)
+disp(2.91*(dia)^(5/3)/(8.*pi^2.*sum(k.*PSD_phi.*(1-J),'all').*(k(2)-k(1))));
+disp(2.91*(dia)^(5/3)/(8.*pi^2.*sum(k.*PSD_phi1.*(1-J),'all').*(k(2)-k(1))));
+disp(2.91*(dia)^(5/3)/(8.*pi^2.*sum(k.*PSD_phi2.*(1-J),'all').*(k(2)-k(1))));
