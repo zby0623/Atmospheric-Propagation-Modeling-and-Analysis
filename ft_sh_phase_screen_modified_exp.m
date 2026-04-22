@@ -1,5 +1,5 @@
 function [phz_lo phz_hi] ...
-= ft_sh_phase_screen(r0, N, delta, L0, l0)
+= ft_sh_phase_screen_modified_exp(r0, N, delta, L0, l0)
  % function [phz_lo phz_hi] ...
  % = ft_sh_phase_screen(r0, N, delta, L0, l0)
  
@@ -24,7 +24,7 @@ function [phz_lo phz_hi] ...
      [th,f] = cart2pol(fx, fy); % polar grid
      fl = 3.3/l0/(2*pi); % inner scale frequency [1/m]
      f0 = 4/L0; % outer scale frequency [1/m]
- % modified von Karman atmospheric phase PSD
+ % modified PSD
      PSD_phi = 0.023*r0^(-5/3) * (1+1.802*(f/fl)-0.254*(f/fl).^(7/6)).*(1-exp(-f.^2/f0.^2)).*exp(-f.^2/fl.^2)./f.^(11/3);
      PSD_phi(2,2) = 0;
  % random draws of Fourier coefficients
