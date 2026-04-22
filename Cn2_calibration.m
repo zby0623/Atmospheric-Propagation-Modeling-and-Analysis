@@ -31,7 +31,7 @@ D_mvk = aoa.*(k0.*dia).^2;
 Cn2 = D_mvk ./( 8.*pi^2.*k0.^2*turblen.*sum(k.*PSD_phi.*(1-J),'all').*(k(2)-k(1)) );
 Cn2_mvk = D_mvk ./( 8.*pi^2.*k0.^2*turblen.*sum(k.*PSD_phi1.*(1-J),'all').*(k(2)-k(1)) );
 Cn2_Tar = D_mvk ./( 8.*pi^2.*k0.^2*turblen.*sum(k.*PSD_phi2.*(1-J),'all').*(k(2)-k(1)) );
-Cn2_kol = aoa.*dia.^(1/3)./2.91./turblen;
+Cn2_kol = aoa.*dia.^(1/3)./2.91./turblen; % See file ("Derivation_Kolmogorov_modified.pdf" for derivation process)
 %% Plot Cn2 vs. AoA
 color=["#FF2908","#FCA800","#1D00DB","#00A204"];
 f = figure();
