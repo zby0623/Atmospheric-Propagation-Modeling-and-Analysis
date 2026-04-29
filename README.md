@@ -6,8 +6,9 @@ Description of contents:
 2. Experimental.mat: mean values and standard deviations of beam circularities obtained in experiments
 3. SI_Experimental.mat: scintillation indices obtained in experiments
 4. simulation_result_type of PSD: simulation results of ellipticity and eccentricity for a specific type of PSD
-5. exp_versus_modified.m: calculating errors between numerical and experimental results
-6. ft_phase_screen_modifed_exp.m: generation of phase screens with modified PSD
-7. ft_sh_phase_screen_modifed_exp.m: second harmonic compensation for generation of phase screens with modified PSD
-8. plot_simulation_shadederrorbar.m: plot of figures comparing numerical and experimental results of beam circularities
-9. Cn2_calibration.m: calculating the Cn2 values based on different PSD expressions (Note: here the paramters are for the Thorlabs CPS635R probe laser only. The wavelength and beam diameter should be adjusted accordingly if using a different probe laser)
+5. data_pca: dataset for the PCA presented in Fig. 9
+6. exp_versus_modified.m: calculating errors between numerical and experimental results
+7. ft_phase_screen_modifed_exp.m: generation of phase screens with modified PSD
+8. ft_sh_phase_screen_modifed_exp.m: second harmonic compensation for generation of phase screens with modified PSD
+9. plot_simulation_shadederrorbar.m: plot of figures comparing numerical and experimental results of beam circularities
+10. Cn2_calibration.m: calculating the Cn2 values based on different PSD expressions (Note: here the paramters are for the Thorlabs CPS635R probe laser only. The wavelength and beam diameter should be adjusted accordingly if using a different probe laser)
