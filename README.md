@@ -12,4 +12,4 @@ Description of contents:
 8. ft_phase_screen_modifed_exp.m: generation of phase screens with modified PSD
 9. ft_sh_phase_screen_modifed_exp.m: second harmonic compensation for generation of phase screens with modified PSD
 10. plot_simulation_shadederrorbar.m: plot of figures comparing numerical and experimental results of beam circularities
-11. Cn2_calibration.m: calculating the Cn2 values based on different PSD expressions (Note: here the paramters are for the Thorlabs CPS635R probe laser only. The wavelength and beam diameter should be adjusted accordingly if using a different probe laser)
+11. Cn2_calibration.m: calculating the Cn2 values based on different PSD expressions [NOTE: here the paramters are for the Thorlabs CPS635R probe laser only. The wavelength and beam diameter should be adjusted accordingly if using a different probe laser]
